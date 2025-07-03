@@ -52,7 +52,7 @@ function App() {
     <div className="mx-auto">
       {/* Mobile Hamburger */}
       <div className="md:hidden flex items-center justify-between p-4 bg-gray-100">
-        <h1 className="text-xl font-bold">TamilPrompt</h1>
+        <h1 className="text-xl font-bold">TAM Ai</h1>
         <button
           className="text-2xl"
           onClick={() => setShowSidebar(!showSidebar)}
@@ -70,7 +70,7 @@ function App() {
         {/* Main content */}
         <div className="flex-1 flex flex-col">
           {/* Optional: hide heading in mobile (already in header) */}
-          <h1 className="text-2xl font-bold my-4 p-3 hidden md:block">TamilPrompt</h1>
+          <h1 className="text-2xl font-bold my-4 p-3 hidden md:block">TAM Ai</h1>
 
           <div className="p-4 h-96 overflow-y-auto bg-white grow">
             {messages.map((msg, idx) => (
