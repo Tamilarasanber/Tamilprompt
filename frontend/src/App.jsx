@@ -27,7 +27,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5000/generate', {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/generate`, {
         prompt,
         model: 'gemini-2.0-flash',
       });
