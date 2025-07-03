@@ -10,6 +10,10 @@ app.use(express.json());
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
+app.get('/', (req, res) => {
+  res.send('Backend is Live 🚀!');
+});
+
 app.post('/generate', async (req, res) => {
   const { prompt, model = 'gemini-pro' } = req.body;
 
@@ -24,6 +28,5 @@ app.post('/generate', async (req, res) => {
   }
 });
 
-
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
