@@ -61,7 +61,7 @@ function App() {
         </button>
       </div>
 
-      <div className="flex h-[90vh] md:h-screen">
+      <div className="flex h-[85vh] md:h-screen">
         {/* Sidebar */}
         <div className={`fixed md:relative top-0 left-0 h-full bg-gray-100 z-10 md:z-0 transition-transform duration-300 md:translate-x-0 ${showSidebar ? 'translate-x-0' : '-translate-x-full'} md:w-1/5`}>
           <Sidebar setMessages={setMessages} />
